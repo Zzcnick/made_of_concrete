@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="contain-to-grid">
+      <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on">
+	<div class="top-bar-left">
+	  <ul class="dropdown menu" data-dropdown-menu>
+	  <li class="menu-text">Hello, world!</li>
+	  <li><a href="#columns">Columns</a></li>
+	  <li><a href="#forms">Forms</a></li>
+	  <li><a href="#buttons">Buttons</a></li>
+	  </ul>
+	</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+        <h1 class="text-center">Some Foundation</h1>
+	<p class="text-center">No, not the one by Isaac Asimov.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns">
+	<h3 id="columns">Columns</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 medium-8 columns">
+	<p>Like Bootstrap, Foundation also has a pretty killer grid system for making columns and whatnot.</p>
+        <!-- Grid Example -->
+
+        <div class="row">
+          <div class="large-12 columns">
+            <div class="callout">
+              <p>I have divided the screen, 12 columns long, into 8 grid lengths. All subgrids under me will be divided across my 12 columns. That is, if I made a div of column length 6, it'll take up half of my 8 column container, or 4 columns total!</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 medium-6 columns">
+            <div class="primary callout">
+              <p>6 columns (4 columns total)</p>
+            </div>
+          </div>
+          <div class="large-6 medium-6 columns">
+            <div class="secondary callout">
+              <p>Isn't math fun?</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="success callout">
+              <p>The .container equivalent for Bootstrap in foundation is <strong>callout</strong>.</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="warning callout">
+              <p>They are containers that have easily overwritten styles, to allow for flexility in design.</p>
+            </div>
+          </div>
+          <div class="large-4 medium-4 small-4 columns">
+            <div class="alert callout">
+              <p>They have attributes such as primary, secondary, warning, success, and alert for varying visual themes.</p>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+	<h3 id="forms">Forms</h3>
+        <form>
+          <div class="row">
+            <div class="large-12 columns">
+	      <p>Forms are also pretty easy to make in Foundation. They are made using input tags, with type equal to the type you would like the form to submit. Using placeholder will add text that grays out in the form. 
+		<label>Long Inputs</label>
+		<input type="text" placeholder="No wrapper div" />
+            </div>
+          </div>
+	  <p>Inputs can have variable sizes using Foundation's grid system. Simply wrap the input in a div with the wanted number of columns.</p>
+          <div class="row">
+            <div class="large-4 medium-4 columns">
+              <label>4 Columns</label>
+              <input type="text" placeholder="4 columns" />
+            </div>
+            <div class="large-8 medium-8 columns">
+              <label>8 Columns</label>
+              <input type="text" placeholder="8 columns" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>Dropdowns are made using select tags. Options under the tag can be added using option tags.</label>
+              <select>
+                <option value="husker">Husker</option>
+                <option value="doggo">Doggo</option>
+                <option value="pupper">Pupper</option>
+                <option value="puggo">Puggo</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-6 medium-6 columns">
+              <label>Radio buttons are basically the same.</label>
+              <input type="radio" name="cereal-milk" value="cereal" id="cereal"><label for="cereal">Cereal First</label>
+              <input type="radio" name="cereal-milk" value="milk" id="milk"><label for="milk2">Milk First</label>
+            </div>
+            <div class="large-6 medium-6 columns">
+              <label>Checkboxes too. Nothing too special about them.</label>
+              <input type="checkbox" name="cereal-milk2" value="cereal" id="cereal2"><label for="cereal2">Cereal First</label>
+              <input type="checkbox" name="cereal-milk2" value="milk" id="milk2"><label for="milk2">Milk First</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <label>There are, of course, textareas.</label>
+              <textarea placeholder="Type in me. Do it. I know you want to."></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="large-4 medium-4 columns">
+        <h3 id="buttons">Buttons</h3>
+        <p>Buttons are practically the same as buttons in Bootstrap. They also have the same flavors, such as primary, secondary, warning, success and alert.</p>
+	  <a href="#" class="button">Simple Button</a><br/>
+          <a href="#" class="success button">Success Btn</a><br/>
+          <a href="#" class="alert button">Alert Btn</a><br/>
+          <a href="#" class="secondary button">Secondary Btn</a></p>
+      </div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
